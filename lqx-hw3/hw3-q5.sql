@@ -1,11 +1,10 @@
 /**
-    returns 4 rows
+    returns 3 rows
     takes 22 s 77 ms
 ******************
-The first 4 rows:
+The first 3 rows:
     Devils Lake ND
     Hattiesburg/Laurel MS
-    Seattle WA
     St. Augustine FL
 
 */
@@ -21,6 +20,7 @@ WHERE F.dest_city NOT IN (
       AND F1.dest_city != 'Seattle WA'
       AND F1.dest_city = F2.origin_city
       AND F2.dest_city != 'Seattle WA'
-    GROUP BY F2.dest_city)
+    GROUP BY F2.dest_city) AND
+F.dest_city != 'Seattle WA'
 GROUP BY F.dest_city
 ORDER BY F.dest_city ASC;
