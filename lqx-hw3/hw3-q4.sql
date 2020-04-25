@@ -1,5 +1,5 @@
 /**
-    return 256 rows
+    returns 256 rows
     takes 17 s 28 ms
 ******************
 The first 20 rows:

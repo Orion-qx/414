@@ -1,5 +1,5 @@
 /**
-    return 4 rows
+    returns 4 rows
     takes 3 s 82 ms
 ******************
 The first 4 rows:
